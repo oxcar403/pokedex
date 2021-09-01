@@ -1,0 +1,161 @@
+/*GLOBAL*/
+
+body{
+    background-color: white;
+    margin: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a,
+h1,
+p{
+    text-decoration: none;
+    color: rgb(243, 243, 6);
+}
+
+.centrar img{
+    width: 300px;
+    height: 300px;
+}
+
+a{
+    font-size: 18px;
+}
+
+
+
+
+
+/*HEADER*/
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-pokebola{
+    width: 300px;
+    height: 300px;
+    padding-top: -20px;
+}
+
+.contenedor-ul{
+    list-style: none;
+}
+
+.contenedor-ul li {
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+
+.contenedor-ul li a:hover{
+    color: rgb(167, 167, 86);
+}
+
+
+
+
+/*MAIN*/
+
+.pokemon{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#buscar-pokemon,
+#borrar-pokemon{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.reglas p{ 
+    text-align: center;
+    margin-top: 30px;
+}
+
+#tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+ }
+
+
+/*MEDIA QUERY*/
+@media(min-width:768px){
+    label{
+        display: none;
+    }
+
+    .contenedor-ul{
+        list-style: none;
+        width: 40%;
+        max-width: 1000px;
+        margin: auto;
+    }
+    
+    .contenedor-ul li a{
+        padding: 20px;
+        display: block;
+    }
+    
+    .contenedor-ul li{
+        display: inline-block;
+        text-align: center;
+    }
+
+    #menu{
+        display: none;
+    }
+}
+
+@media(max-width: 768px){
+    body{
+        background-color: yellow;
+    }
+
+    .img-pokebola{
+        display: flex;
+        justify-content: center;
+        width: 160px;
+        height: 160px;
+    }
+
+    ul{
+        display: none;
+    }
+
+    #menu{
+        display: none;
+    }
+
+
+    input:checked ~ ul{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu-img{
+        margin-left: 20px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .link{
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    a,
+    h1,
+    p{
+        color: black;
+    }
+
+    
+}
