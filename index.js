@@ -70,3 +70,5 @@ function borrarPokemon(){
         pokemon.remove(pokemon)
     })
 }
+
+
